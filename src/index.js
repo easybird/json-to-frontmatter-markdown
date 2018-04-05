@@ -1,13 +1,13 @@
 /* @flow */
+import type { TFrontMatterMarkdown} from './transformToMarkdownString';
+import transformToMarkdownString from './transformToMarkdownString';
+import writeToFile from './writeToFile';
 
-type TFrontMatterMarkdown = {
-  frontmatter: Array<*>,
-  body: string
+type TTransformFrontMatterMarkdown = { frontmatterMarkdown: TFrontMatterMarkdown, path: string, fileName: string };
+
+function transformAndWriteToFile({frontmatterMarkdown, path, fileName}: TTransformFrontMatterMarkdown) {
+  const transformedMarkdown = transformToMarkdownString(frontmatterMarkdown)
+  return writeToFile({ content: transformedMarkdown, path, fileName});
 }
 
-function transformToMarkdownString(frontmatterMarkdown: TFrontMatterMarkdown) {
-  console.log('transformToMarkdownString')
-  return 'test';
-}
-
-export default transformToMarkdownString;
+export default transformAndWriteToFile

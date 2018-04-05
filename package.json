@@ -35,5 +35,8 @@
     "babel-preset-flow": "^6.23.0",
     "jest": "^22.4.3",
     "regenerator-runtime": "^0.11.1"
+  },
+  "dependencies": {
+    "mkdirp": "^0.5.1"
   }
 }

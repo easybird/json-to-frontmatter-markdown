@@ -1,4 +1,4 @@
-import transformToMarkdownString from './index';
+import transformToMarkdownString from '../transformToMarkdownString'
 
 test('can create a string with markdown', () => {
   const smallMarkdownBody = `
