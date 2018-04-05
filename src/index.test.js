@@ -77,7 +77,7 @@ test('can create a string with markdown and bodyWithBackticks included', () => {
 
         Unordered
 
-        + Create a list by starting a line with ``+``, ``-``, or ``*``
+        + Create a list by starting a line with \`+\`, \`-\`, or \`*\`
         + Sub-lists are made by indenting 2 spaces:
         - Marker character change forces new list start:
           * Ac tristique libero volutpat at
@@ -93,7 +93,7 @@ test('can create a string with markdown and bodyWithBackticks included', () => {
 
 
         1. You can use sequential numbers...
-        1. ...or keep all the numbers as ``1.``
+        1. ...or keep all the numbers as \`1.\`
 
         Start numbering with offset:
 
@@ -103,7 +103,7 @@ test('can create a string with markdown and bodyWithBackticks included', () => {
 
         ## Code
 
-        Inline ``code``
+        Inline \`code\`
 
         Indented code
 
@@ -115,19 +115,19 @@ test('can create a string with markdown and bodyWithBackticks included', () => {
 
         Block code "fences"
 
-        ````
+        \`\`\`
         Sample text here...
-        ````
+        \`\`\`
 
         Syntax highlighting
 
-        ```` js
+        \`\`\` js
         var foo = function (bar) {
         return bar++;
         };
 
         console.log(foo(5));
-        ````
+        \`\`\`
 
         ## Tables
 
@@ -171,7 +171,7 @@ test('can create a string with markdown and bodyWithBackticks included', () => {
 
         ## Plugins
 
-        The killer feature of ``markdown-it`` is very effective support of
+        The killer feature of \`markdown-it\` is very effective support of
         [syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
 
 
