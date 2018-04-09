@@ -11,6 +11,9 @@ The following request, will result in the below markdown file on location /Users
       frontMatter: [
         { var1: 'this is a string'},
         { var2: ['this is an array', 'element2']},
+        { obj1: {
+          var3: "var3"
+        }}
       ],
       body: `
         # h1 Heading 8-)
@@ -29,8 +32,10 @@ The following request, will result in the below markdown file on location /Users
 Result:
 ```markdown
 ---
-var1: this is a string
-var2: this is an array,element2
+var1: "this is a string"
+var2: ["this is an array","element2"]
+obj1:
+  var3: "var3"
 ---
 # h1 Heading 8-)
 ## h2 Heading
