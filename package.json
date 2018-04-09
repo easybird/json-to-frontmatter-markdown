@@ -2,7 +2,7 @@
   "name": "json-to-frontmatter-markdown",
   "version": "1.0.0",
   "description": "Transform json to a markdown file with frontmatter and body",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "jest",
     "build": "babel src/ -d lib/",
@@ -37,6 +37,10 @@
     "regenerator-runtime": "^0.11.1"
   },
   "dependencies": {
+    "left-pad": "^1.3.0",
     "mkdirp": "^0.5.1"
+  },
+  "jest": {
+    "rootDir": "src"
   }
 }

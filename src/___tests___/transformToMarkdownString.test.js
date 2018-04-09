@@ -13,8 +13,8 @@ test("can create a string with markdown", () => {
     body: smallMarkdownBody
   });
   expect(markdownString).toBe(`---
-key: content
-anotherKey: otherContent
+key: "content"
+anotherKey: "otherContent"
 ---
 # h1 Heading 8-)
 ## h2 Heading
@@ -264,8 +264,8 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
     body: bodyWithBackticks
   });
   const expectedResult = `---
-key: content
-anotherKey: whatever,otherContent
+key: "content"
+anotherKey: ["whatever","otherContent"]
 ---
 # h1 Heading 8-)
 ## h2 Heading

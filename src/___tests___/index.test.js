@@ -12,7 +12,11 @@ test("can transformAndWriteToFile", () => {
 
   return transformAndWriteToFile({
     frontmatterMarkdown: {
-      frontmatter: [{ key: "content" }, { anotherKey: ["arrayValue1", "arrayValue2"] }],
+      frontmatter: [
+        { key: "content" },
+        { anotherKey: ["arrayValue1", "arrayValue2"] },
+        { anObject: { whatever: true, wuk: new Error('something') } }
+      ],
       body: smallMarkdownBody
     },
     path: path.join(__dirname, "snapshots"),

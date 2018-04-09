@@ -1,6 +1,8 @@
 ---
-key: content
-anotherKey: arrayValue1,arrayValue2
+key: "content"
+anotherKey: ["arrayValue1","arrayValue2"]
+anObject:
+  whatever: "true"
 ---
 # h1 Heading 8-)
 ## h2 Heading
